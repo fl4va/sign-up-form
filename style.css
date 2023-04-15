@@ -16,7 +16,7 @@ body{
 }
 .content{
     padding: 10px;
-    background-color: rgb(215, 234, 240);
+    /* background-color: rgb(215, 234, 240 / 0); */
     width: 50%;
     height: 400px;
     min-width: 450px;
@@ -97,5 +97,5 @@ label{
     right: 20px;
     font-size: 12px;
     word-spacing: normal;
-    color: #3d3434;
+    color: #eee;
 }
