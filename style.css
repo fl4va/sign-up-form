@@ -1,0 +1,101 @@
+:root{
+    --header : 3rem;
+    --footer : 3rem;
+    --main : calc(4OOpx- calc(var(--header) + var(var(--footer))))
+}
+*{
+    font-size: 15px;
+    font-family: monospace;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    background:fixed url(../sign-up-form/alessio-soggetti-gdE-5Oui1Y0-unsplash.jpg) center/cover no-repeat ;
+    height: 500px;    
+}
+.content{
+    padding: 10px;
+    background-color: rgb(215, 234, 240);
+    width: 50%;
+    height: 400px;
+    min-width: 450px;
+    margin: 100px auto;
+    text-indent: 10px;
+    word-spacing: 2px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+form div{
+    height: calc((100%-15px)/3);
+    margin-top: 15px;
+}
+form .header{
+    height: var(--header);
+    color: rgb(30, 69, 141);
+    font-weight: bold;
+    font-size: 20px;
+}
+/* form .main{
+    height: var(--main);
+} */
+form .main div{
+    height: calc((100%-10px)/7);
+    margin-top: 10px;
+}
+hr{
+    margin-top: 30px;
+    
+}
+form .footer{
+    height: var(--footer);
+    margin-top: 40px;
+
+}
+legend{
+    margin-top: 15px;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(30, 69, 141);
+}
+.logo{
+    display: flex; 
+    max-width: 50px;
+    max-height: 80px;
+    padding: 20px;
+}
+button{
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    background-color: aliceblue;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #999;
+}
+button:hover{
+    background-color: #eee;
+    box-shadow: -2px -2px 3px #999;
+}
+
+.first,
+.sec,
+.third,
+label{
+    display: flex;
+    justify-content: space-around;
+}
+label{
+    margin-bottom: 5px;
+}
+.foot{
+    position: absolute;
+    bottom: 2%;
+    right: 20px;
+    font-size: 12px;
+    word-spacing: normal;
+    color: #3d3434;
+}
