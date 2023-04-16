@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@300&display=swap');
+
 :root{
     --header : 3rem;
     --footer : 3rem;
@@ -86,6 +88,12 @@ input{
     border: 1px solid black;
     border-radius: 3px;
     box-shadow: 1px 1px 5px gray;
+    text-indent: 5px;
+    letter-spacing: .7px;
+    height: 25px;
+    width: 250px;
+    font-family: 'Roboto';
+    font-weight: 600;
 }
 .first,
 .sec,
@@ -95,7 +103,10 @@ label{
     justify-content: space-around;
 }
 label{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
 }
 .foot{
     position: absolute;
