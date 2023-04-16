@@ -1,7 +1,8 @@
 :root{
     --header : 3rem;
     --footer : 3rem;
-    --main : calc(4OOpx- calc(var(--header) + var(var(--footer))))
+    --main : calc(4OOpx- calc(var(--header) + var(var(--footer))));
+    --errorColor : rgb(240, 12, 12);
 }
 *{
     font-size: 15px;
@@ -16,7 +17,6 @@ body{
 }
 .content{
     padding: 10px;
-    /* background-color: rgb(215, 234, 240 / 0); */
     width: 50%;
     height: 400px;
     min-width: 450px;
@@ -37,9 +37,9 @@ form .header{
     font-weight: bold;
     font-size: 20px;
 }
-/* form .main{
+form .main{
     height: var(--main);
-} */
+}
 form .main div{
     height: calc((100%-10px)/7);
     margin-top: 10px;
@@ -76,6 +76,7 @@ button{
     border: 1px solid gray;
     border-radius: 4px;
     box-shadow: 0 0 5px #999;
+    font-weight: 600;
 }
 button:hover{
     background-color: #eee;
@@ -83,10 +84,9 @@ button:hover{
 }
 input{
     border: 1px solid black;
-    border-radius: 2px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px gray;
 }
-
-
 .first,
 .sec,
 .third,
@@ -104,4 +104,33 @@ label{
     font-size: 12px;
     word-spacing: normal;
     color: #eee;
+    opacity: .9;
+}
+input:focus{
+    outline: none;
+    border: .15rem solid rgb(53, 53, 187);
+    border-radius: 3px;
+    box-shadow: 0 O 5px blue ;
+}
+input[type='password']:invalid{
+    border: .13rem solid var(--errorColor);
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px gray;
+    border-left: 2px solid var(--errorColor);
+}
+input[type='password']:invalid:focus{
+    outline: none;
+    border: .15rem solid var(--errorColor);
+    border-radius: 3px;
+    box-shadow: 0 O 5px var(--errorColor) ;
+}
+span{
+    display: flex;
+    font-size: 10px;
+    margin-top: 5px;
+    color: var(--errorColor);
+    word-spacing: normal;
+}
+input[type='password']:valid +span{
+    display: none;
 }
